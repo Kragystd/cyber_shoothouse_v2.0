@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StartMode</class>
+ <widget class="QWidget" name="StartMode">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">backGround:black</string>
+  </property>
+  <widget class="QPushButton" name="bt_back">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>1000</y>
+     <width>239</width>
+     <height>68</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QPushButton{color:white;
+border-image:url(./ui/resources/HomePageBtnBg.png);
+font-family:微软雅黑;
+font-size:16px}
+.QPushButton:hover{color:#79d9ff;
+border-image:url(./ui/resources/HomePageBtnBg_hover.png);
+font-size:16px}</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1921</width>
+     <height>981</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="bt_Mode1">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QPushButton{color:white;
+border-image:url(./ui/resources/mode1_gray.png);
+font-family:微软雅黑;
+font-size:30px}
+.QPushButton:hover{
+border-image:url(./ui/resources/mode1.png);
+font-size:35px}</string>
+      </property>
+      <property name="text">
+       <string>自由射击练习</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="bt_Mode2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;敬请期待&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QPushButton{color:white;
+border-image:url(./ui/resources/mode2_gray.png);
+font-family:微软雅黑;
+font-size:30px}
+.QPushButton:hover{
+border-image:url(./ui/resources/mode2.png);
+font-size:35px}</string>
+      </property>
+      <property name="text">
+       <string>常规射击训练（敬请期待）</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="bt_Mode3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;敬请期待&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QPushButton{color:white;
+border-image:url(./ui/resources/mode3_gray.png);
+font-family:微软雅黑;
+font-size:30px}
+.QPushButton:hover{
+border-image:url(./ui/resources/mode3.png);
+font-size:35px}</string>
+      </property>
+      <property name="text">
+       <string>莫桑比克训练（敬请期待）</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>bt_back</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

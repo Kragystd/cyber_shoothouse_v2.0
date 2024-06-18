@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Setting</class>
+ <widget class="QWidget" name="Setting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">backGround:black</string>
+  </property>
+  <widget class="QPushButton" name="bt_back">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>1000</y>
+     <width>239</width>
+     <height>68</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QPushButton{color:white;
+border-image:url(./ui/resources/HomePageBtnBg.png);
+font-family:微软雅黑;
+font-size:16px}
+.QPushButton:hover{color:#79d9ff;
+border-image:url(./ui/resources/HomePageBtnBg_hover.png);
+font-size:16px}</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bg_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:url(./ui/resources/SettingBg.png)
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="cam_input">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>330</y>
+     <width>336</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 0px solid #A0A0A0;
+	background: url(./ui/resources/lineEdit.png),transparent;
+	color: #5e7884; 
+	selection-background-color: #5e7884; 
+	selection-color: white; /* 选中文本的颜色 */
+	font-family: 微软雅黑;
+	font-size: 14pt; /* 文本字体大小 */
+	text-align:center
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 0px solid #298DFF;
+	background: url(./ui/resources/lineEdit_hover.png),transparent;
+	color: #87d8ff;
+	selection-background-color: black;
+	selection-color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="fire_sound">
+   <property name="geometry">
+    <rect>
+     <x>1600</x>
+     <y>330</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QCheckBox{
+	border: none;/*最外层边框*/
+	background:transparent
+}
+QCheckBox::indicator{/*选择框尺寸*/
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px solid #b1b1b1;
+	width: 30px;
+	height: 30px;
+}
+ 
+QCheckBox::indicator:unchecked {
+        image: url(./ui/resources/unchecked.png);
+}
+QCheckBox::indicator:unchecked:hover {
+        image: url(./ui/resources/unchecked_hover.png);
+}
+QCheckBox::indicator:unchecked:pressed {
+        image: url(./ui/resources/unchecked_hover.png);
+}
+QCheckBox::indicator:checked {
+        image: url(./ui/resources/checked.png);
+}
+QCheckBox::indicator:checked:hover {
+        image: url(./ui/resources/checked_hover.png);
+}
+QCheckBox::indicator:checked:pressed {
+        image: url(./ui/resources/checked_hover.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="shell_sound">
+   <property name="geometry">
+    <rect>
+     <x>1600</x>
+     <y>380</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QCheckBox{
+	border: none;/*最外层边框*/
+	background:transparent
+}
+QCheckBox::indicator{/*选择框尺寸*/
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px solid #b1b1b1;
+	width: 30px;
+	height: 30px;
+}
+ 
+QCheckBox::indicator:unchecked {
+        image: url(./ui/resources/unchecked.png);
+}
+QCheckBox::indicator:unchecked:hover {
+        image: url(./ui/resources/unchecked_hover.png);
+}
+QCheckBox::indicator:unchecked:pressed {
+        image: url(./ui/resources/unchecked_hover.png);
+}
+QCheckBox::indicator:checked {
+        image: url(./ui/resources/checked.png);
+}
+QCheckBox::indicator:checked:hover {
+        image: url(./ui/resources/checked_hover.png);
+}
+QCheckBox::indicator:checked:pressed {
+        image: url(./ui/resources/checked_hover.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="hit_sound">
+   <property name="geometry">
+    <rect>
+     <x>1600</x>
+     <y>430</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QCheckBox{
+	border: none;/*最外层边框*/
+	background:transparent
+}
+QCheckBox::indicator{/*选择框尺寸*/
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px solid #b1b1b1;
+	width: 30px;
+	height: 30px;
+}
+ 
+QCheckBox::indicator:unchecked {
+        image: url(./ui/resources/unchecked.png);
+}
+QCheckBox::indicator:unchecked:hover {
+        image: url(./ui/resources/unchecked_hover.png);
+}
+QCheckBox::indicator:unchecked:pressed {
+        image: url(./ui/resources/unchecked_hover.png);
+}
+QCheckBox::indicator:checked {
+        image: url(./ui/resources/checked.png);
+}
+QCheckBox::indicator:checked:hover {
+        image: url(./ui/resources/checked_hover.png);
+}
+QCheckBox::indicator:checked:pressed {
+        image: url(./ui/resources/checked_hover.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kill_sound">
+   <property name="geometry">
+    <rect>
+     <x>1600</x>
+     <y>480</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QCheckBox{
+	border: none;/*最外层边框*/
+	background:transparent
+}
+QCheckBox::indicator{/*选择框尺寸*/
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px solid #b1b1b1;
+	width: 30px;
+	height: 30px;
+}
+ 
+QCheckBox::indicator:unchecked {
+        image: url(./ui/resources/unchecked.png);
+}
+QCheckBox::indicator:unchecked:hover {
+        image: url(./ui/resources/unchecked_hover.png);
+}
+QCheckBox::indicator:unchecked:pressed {
+        image: url(./ui/resources/unchecked_hover.png);
+}
+QCheckBox::indicator:checked {
+        image: url(./ui/resources/checked.png);
+}
+QCheckBox::indicator:checked:hover {
+        image: url(./ui/resources/checked_hover.png);
+}
+QCheckBox::indicator:checked:pressed {
+        image: url(./ui/resources/checked_hover.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bt_apply">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>1000</y>
+     <width>239</width>
+     <height>68</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QPushButton{color:white;
+border-image:url(./ui/resources/HomePageBtnBg.png);
+font-family:微软雅黑;
+font-size:16px}
+.QPushButton:hover{color:#79d9ff;
+border-image:url(./ui/resources/HomePageBtnBg_hover.png);
+font-size:16px}</string>
+   </property>
+   <property name="text">
+    <string>应用更改</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tick_input">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>380</y>
+     <width>336</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 0px solid #A0A0A0;
+	background: url(./ui/resources/lineEdit.png),transparent;
+	color: #5e7884; 
+	selection-background-color: #5e7884; 
+	selection-color: white; /* 选中文本的颜色 */
+	font-family: 微软雅黑;
+	font-size: 14pt; /* 文本字体大小 */
+	text-align:center
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 0px solid #298DFF;
+	background: url(./ui/resources/lineEdit_hover.png),transparent;
+	color: #87d8ff;
+	selection-background-color: black;
+	selection-color: white;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="threshold_input">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>430</y>
+     <width>284</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 0px solid #A0A0A0;
+	background: url(./ui/resources/lineEdit.png),transparent;
+	color: #5e7884; 
+	selection-background-color: #5e7884; 
+	selection-color: white; /* 选中文本的颜色 */
+	font-family: 微软雅黑;
+	font-size: 14pt; /* 文本字体大小 */
+	text-align:center
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 0px solid #298DFF;
+	background: url(./ui/resources/lineEdit_hover.png),transparent;
+	color: #87d8ff;
+	selection-background-color: black;
+	selection-color: white;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="score_precision_input">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>480</y>
+     <width>284</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 0px solid #A0A0A0;
+	background: url(./ui/resources/lineEdit.png),transparent;
+	color: #5e7884; 
+	selection-background-color: #5e7884; 
+	selection-color: white; /* 选中文本的颜色 */
+	font-family: 微软雅黑;
+	font-size: 14pt; /* 文本字体大小 */
+	text-align:center
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 0px solid #298DFF;
+	background: url(./ui/resources/lineEdit_hover.png),transparent;
+	color: #87d8ff;
+	selection-background-color: black;
+	selection-color: white;
+}</string>
+   </property>
+  </widget>
+  <zorder>bg_label</zorder>
+  <zorder>bt_back</zorder>
+  <zorder>cam_input</zorder>
+  <zorder>fire_sound</zorder>
+  <zorder>shell_sound</zorder>
+  <zorder>hit_sound</zorder>
+  <zorder>kill_sound</zorder>
+  <zorder>bt_apply</zorder>
+  <zorder>tick_input</zorder>
+  <zorder>threshold_input</zorder>
+  <zorder>score_precision_input</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

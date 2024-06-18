@@ -1,0 +1,1 @@
+{"shootRange_config": {"camera": "http://192.168.137.207:4747/video", "tick": 0.1, "hitpoint_threshold": 100, "ST_height": 1000, "ST_width": 706, "vt_path": "./src/imgs/vt.png", "st_path": "./src/imgs/st.png"}, "sound_config": {"mute": false, "fire_sound": true, "shell_sound": true, "hit_sound": true, "kill_sound": true, "bgm_sound": true}}

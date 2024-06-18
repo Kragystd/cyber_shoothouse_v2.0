@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PlayPage</class>
+ <widget class="QWidget" name="PlayPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">backGround:black;
+color:white;
+font-size:16px;
+font-family:微软雅黑</string>
+  </property>
+  <widget class="QLabel" name="hitpointLabel">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>120</y>
+     <width>200</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+color:white</string>
+   </property>
+   <property name="text">
+    <string>命中点：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="scoreLabel">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>160</y>
+     <width>200</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+color:white</string>
+   </property>
+   <property name="text">
+    <string>分数：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="countLabel">
+   <property name="geometry">
+    <rect>
+     <x>1620</x>
+     <y>260</y>
+     <width>100</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#7c7c7c;
+background:transparent</string>
+   </property>
+   <property name="text">
+    <string>计数：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="accuracyLabel">
+   <property name="geometry">
+    <rect>
+     <x>1620</x>
+     <y>360</y>
+     <width>100</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#7c7c7c;
+background:transparent</string>
+   </property>
+   <property name="text">
+    <string>准确率：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="avgscoreLabel">
+   <property name="geometry">
+    <rect>
+     <x>1620</x>
+     <y>460</y>
+     <width>100</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#7c7c7c;
+background:transparent</string>
+   </property>
+   <property name="text">
+    <string>平均分：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="headshotRateLabel">
+   <property name="geometry">
+    <rect>
+     <x>1620</x>
+     <y>560</y>
+     <width>100</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#7c7c7c;
+background:transparent</string>
+   </property>
+   <property name="text">
+    <string>爆头率：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bt_reset">
+   <property name="geometry">
+    <rect>
+     <x>1550</x>
+     <y>810</y>
+     <width>239</width>
+     <height>68</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QPushButton{color:white;
+border-image:url(./ui/resources/HomePageBtnBg.png);
+font-family:微软雅黑;
+font-size:16px}
+.QPushButton:hover{color:#79d9ff;
+border-image:url(./ui/resources/HomePageBtnBg_hover.png);
+font-size:16px}</string>
+   </property>
+   <property name="text">
+    <string>重置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bt_save">
+   <property name="geometry">
+    <rect>
+     <x>1550</x>
+     <y>885</y>
+     <width>239</width>
+     <height>68</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QPushButton{color:white;
+border-image:url(./ui/resources/HomePageBtnBg.png);
+font-family:微软雅黑;
+font-size:16px}
+.QPushButton:hover{color:#79d9ff;
+border-image:url(./ui/resources/HomePageBtnBg_hover.png);
+font-size:16px}</string>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bt_back">
+   <property name="geometry">
+    <rect>
+     <x>1550</x>
+     <y>960</y>
+     <width>239</width>
+     <height>68</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QPushButton{color:white;
+border-image:url(./ui/resources/HomePageBtnBg.png);
+font-family:微软雅黑;
+font-size:16px}
+.QPushButton:hover{color:#79d9ff;
+border-image:url(./ui/resources/HomePageBtnBg_hover.png);
+font-size:16px}</string>
+   </property>
+   <property name="text">
+    <string>主菜单</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bg_label">
+   <property name="geometry">
+    <rect>
+     <x>1480</x>
+     <y>50</y>
+     <width>372</width>
+     <height>754</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QLabel{background:url(./ui/resources/PlayPageBg.png);}
+.QLabel:hover{background:url(./ui/resources/PlayPageBg_hover.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="targetLabel">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>100</y>
+     <width>600</width>
+     <height>880</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+</string>
+   </property>
+   <property name="text">
+    <string>未检测到靶子</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="camLabel">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>100</y>
+     <width>600</width>
+     <height>880</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1000</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+</string>
+   </property>
+   <property name="text">
+    <string>请稍等...</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>bg_label</zorder>
+  <zorder>accuracyLabel</zorder>
+  <zorder>avgscoreLabel</zorder>
+  <zorder>headshotRateLabel</zorder>
+  <zorder>bt_reset</zorder>
+  <zorder>bt_save</zorder>
+  <zorder>bt_back</zorder>
+  <zorder>countLabel</zorder>
+  <zorder>targetLabel</zorder>
+  <zorder>camLabel</zorder>
+  <zorder>hitpointLabel</zorder>
+  <zorder>scoreLabel</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
